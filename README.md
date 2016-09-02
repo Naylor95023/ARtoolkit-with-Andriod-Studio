@@ -2,6 +2,8 @@
 
 This is a project of artoolkit
 
+2015/Image processing final project
+
 Reference Source : https://github.com/kosiara/artoolkit-android-studio-example
 
 I add second marker and use openGL to draw a arrow,
