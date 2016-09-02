@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "org.artoolkit.ar.samples"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile project(':base')
+    compile files('src/main/libs/gluegen-rt.jar')
+    compile files('src/main/libs/gluegen-rt-natives-linux-amd64.jar')
+    compile files('src/main/libs/gluegen-rt-natives-linux-i586.jar')
+    compile files('src/main/libs/gluegen-rt-natives-windows-amd64.jar')
+    compile files('src/main/libs/gluegen-rt-natives-windows-i586.jar')
+    compile files('src/main/libs/jogl-all.jar')
+    compile files('src/main/libs/jogl-all-natives-windows-i586.jar')
+    compile files('src/main/libs/jogl-all-natives-linux-i586.jar')
+    compile files('src/main/libs/jogl-all-natives-linux-amd64.jar')
+    compile files('src/main/libs/jogl-all-natives-windows-amd64.jar')
+}
