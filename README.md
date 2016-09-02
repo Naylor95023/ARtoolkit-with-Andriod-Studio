@@ -1,6 +1,6 @@
 # ARtoolkit-with-Andriod-Studio
 
-This is a project of artolkit
+This is a project of artoolkit
 
 Reference Source : https://github.com/kosiara/artoolkit-android-studio-example
 
